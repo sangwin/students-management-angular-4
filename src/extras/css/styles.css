@@ -1,0 +1,34 @@
+/**
+ * Created By : Sangwin Gawande (http://sangw.in)
+ */
+
+ /* You can add global styles to this file, and also import other style files */
+ .logo{
+ 	margin: 30px 20px;
+ }
+ .custom-button{
+ 	float: right;
+ 	font-size: 15px;
+ }
+ .text-center{
+ 	text-align: center;
+ }
+ .pointer{
+ 	cursor: pointer;
+ }
+ .float-right{
+ 	float:right;
+ }
+ .w3-button{
+ 	border-radius: 10px;
+ }
+ .w3-input{
+ 	margin-bottom: 10px;
+ }
+ .custom-icon{
+ 	margin: 5px 6px 5px 0px;
+ 	font-size: 20px!important;
+ }
+/**
+ * Created By : Sangwin Gawande (http://sangw.in)
+ */

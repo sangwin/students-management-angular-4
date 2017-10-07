@@ -1,0 +1,21 @@
+<!-- Created By : Sangwin Gawande (http://sangw.in) -->
+
+<!-- Side Bar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card-2" style="z-index:3;width:250px;" id="mySidebar">
+	<!-- Logo -->
+	<img src="assets/sangwin-logo.png" class="logo">
+	<!-- Sidebar Links -->
+	<a class="w3-bar-item w3-button" [ngClass]="{'w3-teal': (active == '/')}" routerLink="/"> <i class="w3-medium fa fa-user"></i>  User List</a>
+	<a class="w3-bar-item w3-button" routerLink="/add"  [ngClass]="{'w3-teal': (active == '/add')}"> <i class="w3-medium fa fa-plus"></i>  Add new user</a>
+	<a class="w3-bar-item w3-button" (click)="logOut()"><i class="w3-medium fa fa-sign-out"></i>  Logout</a>
+</nav>
+
+<!-- Load main contents -->
+<div class="w3-main" style="margin-left:250px;">
+	<div class="w3-container">
+	<!-- Initiate Child Routing -->
+		<router-outlet></router-outlet>
+	</div>
+</div>
+
+<!-- Created By : Sangwin Gawande (http://sangw.in) -->

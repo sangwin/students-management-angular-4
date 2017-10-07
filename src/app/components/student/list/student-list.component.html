@@ -1,0 +1,38 @@
+<!-- Created By : Sangwin Gawande (http://sangw.in) -->
+
+<div class="w3-container" *ngIf="studentListData">
+	<div class="w3-panel w3-round-small w3-teal">
+		<h3>Student List <button routerLink="/add" class="w3-button w3-green custom-button"><i class="w3-medium  fa fa-plus"></i> Add New Student</button></h3>
+	</div>
+	<span><i class="w3-medium fa fa-search"></i> Search : <input class="" type="text" [(ngModel)]='filterData'></span>
+
+	<div class="w3-panel w3-green" *ngIf="(studentListData | filter:filterData).length == 0">
+		<h3>Oh no</h3>
+		<p>No students found <span *ngIf="filterData"> with search "{{filterData}}"</span> </p>
+	</div>
+	<div class="w3-panel w3-light-grey w3-padding-16 w3-card-2" *ngIf="(studentListData | filter:filterData | filter:filterData).length != 0">
+		<table class="w3-table w3-striped w3-bordered">
+			<tr>
+				<th><i class="w3-medium custom-icon fa fa-refresh"></i> Sr. No.</th>
+				<!-- <th>ID</th> -->
+				<th><i class="w3-medium custom-icon fa fa-user"></i> First Name</th>
+				<th><i class="w3-medium custom-icon fa fa-user"></i> Last Name</th>
+				<th><i class="w3-medium custom-icon fa fa-envelope-o"></i> Email</th>
+				<th><i class="w3-medium custom-icon fa fa-phone"></i> Phone</th>
+				<th><i class="w3-medium custom-icon fa fa-pencil"></i> Update</th>
+				<th><i class="w3-medium custom-icon fa fa-trash"></i> Delete</th>
+			</tr>
+			<tr *ngFor="let student of studentListData | filter:filterData; index as i;" appHighlightStudent>
+				<td>{{i +1}}</td>
+				<td class="pointer" [routerLink]="['detail', i]">{{student.first_name}} </td>
+				<td class="pointer" [routerLink]="['detail', i]">{{student.last_name}}</td>
+				<td class="pointer" [routerLink]="['detail', i]">{{student.email}}</td>
+				<td class="pointer" [routerLink]="['detail', i]">{{student.phone | phone}}</td>
+				<td><button [routerLink]="['update', i]" class="w3-button w3-blue">Update</button></td>
+				<td><button (click)="deleteStudent(i);" class="w3-button w3-red">Delete</button></td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<!-- Created By : Sangwin Gawande (http://sangw.in) -->

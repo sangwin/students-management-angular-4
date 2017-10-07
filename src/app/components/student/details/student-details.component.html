@@ -1,0 +1,31 @@
+<!-- Created By : Sangwin Gawande (http://sangw.in) -->
+
+<div class="w3-container" *ngIf="studentDetail">
+	<div class="w3-panel w3-round-small w3-teal">
+		<h3>Student Details <button [routerLink]="['/update', index]" class="w3-button w3-blue custom-button"> <i class="w3-medium fa fa-pencil"></i> Edit</button> <button routerLink="/" class="w3-button w3-green custom-button margin-right"> <i class="w3-medium fa fa-chevron-left"></i> Back</button></h3>
+	</div>
+	<div class=" w3-card custom-card"><br>
+		<h3 class="text-center">{{studentDetail.first_name}} {{studentDetail.last_name}}</h3>
+		<hr>
+		<table class="w3-table w3-bordered">
+			<tr>
+				<td><i class="w3-medium custom-icon fa fa-user"></i>First Name</td>
+				<td>: <b>{{studentDetail.first_name}}</b></td>
+			</tr>
+			<tr>
+				<td><i class="w3-medium custom-icon fa fa-user"></i>Last name</td>
+				<td>: <b>{{studentDetail.last_name}}</b></td>
+			</tr>
+			<tr>
+				<td><i class="w3-medium custom-icon fa fa-envelope-o"></i> Email Address</td>
+				<td>: <b>{{studentDetail.email}}</b></td>
+			</tr>
+			<tr>
+				<td><i class="w3-medium custom-icon fa fa-phone"></i> Phone</td>
+				<td>: <b>{{studentDetail.phone}}</b></td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<!-- Created By : Sangwin Gawande (http://sangw.in) -->
