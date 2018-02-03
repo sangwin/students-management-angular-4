@@ -1,5 +1,5 @@
 # Student Management
-### Created By [Sangwin Gawande](http://sangw.in)
+### Created By [Sangwin Gawande](http://imsangwin.com)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
 
