@@ -1,5 +1,5 @@
 /**
- * Created By : Sangwin Gawande (http://sangw.in)
+ * Created By : Sangwin Gawande (https://sangw.in)
  */
 
  import { Component, OnInit } from '@angular/core';
@@ -70,5 +70,5 @@
  ];
 
 /**
- * Created By : Sangwin Gawande (http://sangw.in)
+ * Created By : Sangwin Gawande (https://sangw.in)
  */

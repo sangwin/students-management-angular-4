@@ -1,6 +1,8 @@
 {
   "name": "student-management",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "Student Management Demo In Angular",
+  "author": "Sangwin Gawande (https://sangw.in)",
   "license": "MIT",
   "scripts": {
     "ng": "ng",

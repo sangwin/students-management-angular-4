@@ -1,5 +1,5 @@
 /**
- * Created By : Sangwin Gawande (http://sangw.in)
+ * Created By : Sangwin Gawande (https://sangw.in)
  */
 
 import { TestBed, inject } from '@angular/core/testing';
@@ -19,5 +19,5 @@ describe('ConfigService', () => {
 });
 
 /**
- * Created By : Sangwin Gawande (http://sangw.in)
+ * Created By : Sangwin Gawande (https://sangw.in)
  */

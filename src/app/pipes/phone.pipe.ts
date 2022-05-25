@@ -1,5 +1,5 @@
 /**
- * Created By : Sangwin Gawande (http://sangw.in)
+ * Created By : Sangwin Gawande (https://sangw.in)
  */
 
 import { Pipe, PipeTransform } from '@angular/core';
@@ -16,5 +16,5 @@ export class PhonePipe implements PipeTransform {
 }
 
 /**
- * Created By : Sangwin Gawande (http://sangw.in)
+ * Created By : Sangwin Gawande (https://sangw.in)
  */

@@ -1,5 +1,5 @@
 /**
- * Created By : Sangwin Gawande (http://sangw.in)
+ * Created By : Sangwin Gawande (https://sangw.in)
  */
 
 import { enableProdMode } from '@angular/core';
@@ -16,5 +16,5 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
 
 /**
- * Created By : Sangwin Gawande (http://sangw.in)
+ * Created By : Sangwin Gawande (https://sangw.in)
  */

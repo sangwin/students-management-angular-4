@@ -1,5 +1,5 @@
 /**
- * Created By : Sangwin Gawande (http://sangw.in)
+ * Created By : Sangwin Gawande (https://sangw.in)
  */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
@@ -27,5 +27,5 @@ describe('StudentDetailsComponent', () => {
   });
 });
 /**
- * Created By : Sangwin Gawande (http://sangw.in)
+ * Created By : Sangwin Gawande (https://sangw.in)
  */
